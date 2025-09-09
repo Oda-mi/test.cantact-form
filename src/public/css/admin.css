@@ -1,0 +1,322 @@
+/*ヘッダー*/
+.header {
+    background: #fff;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header_inner {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.header_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Inika', serif;
+}
+
+
+/*ログアウトボタン*/
+.header_logout {
+    background: #E0DFDE;
+    color: #8B7969;
+    border-color: #E0DFDE;
+    text-decoration: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+/*全体*/
+.admin__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+
+/*h2見出し部分*/
+.admin__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #8B7969;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+}
+
+
+/*検索フォーム*/
+.admin__search form {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin__search input,
+.admin__search select {
+    padding: 10px;
+    border: 1px solid #D9C6B5;
+    color: #8B7969;
+    background-color: #f5f5f5;
+}
+
+.admin__search-input {
+    width: 260px;
+    padding: 5px;
+    border: 1px solid #D9C6B5;
+    color: #8B7969;
+}
+
+
+/*検索ボタン*/
+.btn_search {
+    background: #8B7969;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+/*リセットボタン*/
+.btn_reset {
+    background: #D9C6B5;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+/*プルダウンの▼*/
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #D9C6B5;
+    color: #8B7969;
+    appearance: none;
+    background: #fff;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #D9C6B5;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.select-gender select,
+.select-category select {
+    padding: 11px 10px;
+    background-color: #f5f5f5;
+}
+
+.select-gender select {
+    width: 90px;
+}
+
+.select-category select {
+    width: 200px;
+}
+
+
+/*input type date カレンダーのアイコン非表示*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+/*ページネーション*/
+.admin__export-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 940px;
+    margin: 0 auto 20px;
+}
+
+.admin__pagination {
+    display: flex;
+}
+
+.admin__pagination .page-item {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #D9C6B5;
+    color: #8B7969;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: -1px;
+}
+
+.admin__pagination .page-item:hover {
+    background-color: #f4f4f4;
+}
+
+.admin__pagination .active {
+    background-color: #8B7969;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*エクスポート*/
+.btn_export {
+    background: #E1DBD699;
+    color: #8B7969;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+
+/*テーブル*/
+.admin__table {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.admin__table table {
+    width: 79%;
+    border-collapse: collapse;
+    margin: 15px auto;
+    text-align: center;
+    border: 1px solid #D9C6B5;
+}
+
+.admin__table th,
+.admin__table td {
+    border: 1px solid #D9C6B5;
+    padding: 10px 30px;
+    text-align: left;
+    border-top: 1px solid #D9C6B5;
+    border-bottom: 1px solid #D9C6B5;
+    border-left: none;
+    border-right: none;
+}
+
+.admin__table th {
+    background: #8B7969;
+    color: #fff;
+}
+
+.admin__table td {
+    color: #8B7969;
+}
+
+.btn_detail {
+    background: #F4F4F44D;
+    color: #D9C6B599;
+    border: 1px solid #D9C6B599;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+
+/*モーダルウィンドウ*/
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal__content {
+    background: #fff;
+    border: 1px solid #8B7969;
+    padding: 50px 100px;
+    box-shadow: 2px 2px 2px#8B7969;
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #8B7969;
+    border-radius: 50%;
+    border: 1px solid #8B7969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    margin: 30px 0;
+    align-items: start;
+}
+
+.modal-label {
+    color: #8B7969;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.modal-value {
+    color: #8B7969;
+    word-break: break-word;
+}
+
+.modal-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.btn-delete {
+    font-size: 13px;
+    padding: 8px 20px;
+    width: 15%;
+    height: 40px;
+    border: none;
+    background: #BA370D;
+    color: #fff;
+    cursor: pointer;
+}

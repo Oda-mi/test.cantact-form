@@ -1,0 +1,222 @@
+/*ヘッダー*/
+.header {
+    background: #fff;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header_inner {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.header_logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-family: 'Inika', serif;
+}
+
+
+/*フォーム全体*/
+.contact-form__content {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+
+/*h2見出し*/
+.contact-form__heading {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #8B7969;
+  font-size: 20px;
+  font-family: 'Inika', serif;
+}
+
+
+/*フォーム*/
+.form {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form__group-content {
+  display: flex;
+  max-width: 600px;
+  flex: 1;
+}
+
+.form__group-content label {
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  align-items: center;
+  color: #8B7969;
+}
+
+.form__group-content.input-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*ラベル*/
+.form__label--item {
+    color: #8B7969;
+    font-size: 16px;
+}
+
+.form__label--required {
+    color: red;
+}
+
+
+/*エラーメッセージ*/
+.form__error {
+  margin-top: 5px;
+  height: 20px;
+  color: #ff0000;
+  font-size: 15px;
+  text-align: left;
+}
+
+
+/*テキスト入力部分*/
+.form__input--text {
+  display: flex;
+  gap: 12px;  /*子要素の間隔調整*/
+  flex:1;  /*横幅の調整*/
+}
+
+.form__input--text input,
+.form__input--select,
+.form__input--textarea textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #F2F1F0;
+  box-sizing: border-box;  /*要素の幅や高さの計算方法を変える*/
+}
+
+.form__input--text input {
+  flex: 1;
+}
+
+
+/*電話番号*/
+.form__input--text input[type="tel"] {
+  text-align: center;
+}
+
+
+/*プルダウン*/
+.form__input--select {
+  width: 60%;
+  color: #8B7969;
+  appearance: none;
+}
+
+.form__input--select:invalid {
+  color: #B0AFAF;
+}
+
+/*プルダウン▼部分*/
+.select-wrapper {
+  position: relative;
+  width: 60%;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);   /* 真ん中に揃える */
+  color: #8B7969;
+  pointer-events: none;
+}
+
+
+/*問い合わせ内容*/
+.form__input--textarea {
+  display: flex;
+  flex: 1;
+}
+
+.form__input--textarea textarea {
+  width: 100%;
+  height: 150px;
+}
+
+
+/*確認画面ボタン*/
+.form__button {
+  margin-top: 25px;
+}
+
+.form__button-submit {
+  font-size: 16px;
+  padding: 5px;
+  width: 15%;
+  height: 40px;
+  border: none;
+  background: #8B7969;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+/*ラジオボタン*/
+.custom-radio {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #8B7969;
+}
+
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.radio-btn {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #8B7969;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-btn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #8B7969;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

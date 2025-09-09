@@ -1,0 +1,110 @@
+/*ヘッダー*/
+.header {
+    background: #fff;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header_inner {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.header_logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-family: 'Inika', serif;
+}
+
+
+/*フォーム全体*/
+.confirm__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+
+/*h2見出し*/
+.confirm__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #8B7969;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+}
+
+
+/*フォーム*/
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+/*テーブル*/
+.confirm-table {
+    border: 1px solid #E0DFDE;
+}
+
+.confirm-table__inner {
+    width: 100%;
+}
+
+/*テーブル見出し部分（ラベル）*/
+.confirm-table__header {
+    padding: 15px 30px;
+    width: 30%;
+    border-bottom: 1px solid #8B7969;
+    font-weight: 100;
+    background-color: #8B7969;
+    color: #fff;
+    text-align: left;
+}
+
+/*テーブルテキスト（入力された部分）*/
+.confirm-table__text {
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    color: #8B7969;
+}
+
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+
+
+/*送信ボタン*/
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    font-size: 15px;
+    padding: 10px;
+    width: 10%;
+    height: 40px;
+    border: none;
+    background: #8B7969;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*修正ボタン*/
+.form__button-back {
+    background: none;
+    border: none;
+    color: #8B7969;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: underline;
+}

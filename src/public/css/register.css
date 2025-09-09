@@ -1,0 +1,128 @@
+/*ヘッダー*/
+.header {
+    background: #fff;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header_inner {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.header_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Inika', serif;
+}
+
+
+/*ログインボタン*/
+.header_login {
+    background: #E0DFDE;
+    color: #8B7969;
+    border-color: #E0DFDE;
+    text-decoration: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+/*コンテンツ全体*/
+.auth__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: none;
+    background-color: #D9C6B5;
+    min-height: 100vh;
+}
+
+
+/*h2見出し部分*/
+.auth__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #8B7969;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+}
+
+
+/*フォーム*/
+.form {
+    margin: 0 auto;
+    padding: 30px 15px;
+    width: 600px;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.form__group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+
+/*フォームラベル*/
+.form__group-label {
+    font-size: 18px;
+    color: #8B7969;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+}
+
+
+/*input部分*/
+.form__group-input input{
+    width: 90%;
+    height: 50px;
+    padding: 0 30px;
+    font-size: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/*登録ボタン*/
+.form__button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form__button-submit {
+    font-size: 16px;
+    padding: 5px;
+    width: 20%;
+    height: 40px;
+    border: none;
+    background: #8B7969;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*エラーメッセージ*/
+.form__error {
+    margin-top: 5px;
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
